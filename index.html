@@ -117,11 +117,13 @@
     }
 
     .fireworks {
-      width: min(380px, 90vw);
+      width: 90vw;
+      max-width: 500px;
+      height: auto;
       margin: 0 auto;
       display: block;
     }
-
+    
     @keyframes pop {
       from { transform: scale(.96); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
@@ -300,6 +302,7 @@
   </script>
 </body>
 </html>
+
 
 
 
