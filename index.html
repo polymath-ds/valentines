@@ -20,6 +20,11 @@
 
     * { box-sizing: border-box; }
 
+    <audio id="loveSong" preload="auto">
+      <source src="perfect.mp3" type="audio/mpeg">
+    </audio>
+
+
     body {
       margin: 0;
       min-height: 100svh;
@@ -274,10 +279,15 @@
       result.style.display = "block";
       resizeConfettiCanvas();
       fullScreenConfetti();
+      
+      const song = document.getElementById("loveSong");
+      song.volume = 0.7;   // Adjust volume (0.0 to 1.0)
+      song.play();
     });
   </script>
 </body>
 </html>
+
 
 
 
